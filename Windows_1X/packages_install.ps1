@@ -43,70 +43,33 @@ scoop install windows-virtualdesktop-helper
 $WINGET_PACKAGES = @(
 # HW monitoring
     'CPUID.CPU-Z'
-    'CPUID.HWMonitor'
-
-# Drivers and HW support
-    'Logitech.OptionsPlus'
 
 # Runtimes
-    'Microsoft.DotNet.DesktopRuntime.6' # for GitExtensions
-    'Microsoft.DotNet.DesktopRuntime.7'
-    'Microsoft.VCRedist.2015+.x64'
-    'RubyInstallerTeam.RubyWithDevKit.3.2'
     'Microsoft.PowerShell'
 
-# Virtualisation and containers
-    'Docker.DockerDesktop'
-    'VMware.WorkstationPlayer' # broken
-    # TODO? add WSL installation here?
 
 # Utils & TOSORT TODO - sort to cathegories
     '7zip.7zip'
-    'Gyan.FFmpeg'
-    # TODO WizTree does what WinDirStat does but better and quicker, consider commenting WinDirStat out
-    'WinDirStat.WinDirStat'
     'AntibodySoftware.WizTree'
     'XAMPPRocky.tokei' # broken? TODO FIX?
     'Ookla.Speedtest.Desktop'
     'fzf'
     'AlDanial.Cloc' # count number of lines of code
     'starship.starship'
-    'pCloudAG.pCloudDrive'
-    'Anki.Anki'
     'Hex-Rays.IDA.Free'
-    'Qalculate'
-    'Joplin'
-    'Geany.Geany'
-    'PuTTY.PuTTY'
-    'DBBrowserForSQLite.DBBrowserForSQLite'
-    'voidtools.Everything'
     'Oracle.VirtualBox'
-    'Google.EarthPro'
-    'CodeSector.TeraCopy'
-    'Gyan.FFmpeg'
-    'NirSoft.OpenedFilesView'
-    'NirSoft.InsideClipboard'
-    'Google.GoogleDrive'
-    'qBittorrent.qBittorrent'
-    'dotPDN.PaintDotNet'
-    'Inkscape.Inkscape'
-    'Audacity.Audacity'
-    'KDE.Kdenlive'
-    'Microsoft.Sysinternals.Autoruns'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
     # TODO implement matching behaviour in Win and Linux (same keyboard shortcuts
     # and same possibilities)
     'Microsoft.PowerToys'
-    'AutoHotkey.AutoHotkey'
     # TODO add relevant sysinternals packages (see `winget search sysinternals`)
 
 # Version control
     'Git.Git'
     'GitHub.cli'
     'GitHub.GitHubDesktop'
-    'GitExtensionsTeam.GitExtensions'
     'o2sh.onefetch'
 
 # Code editors
@@ -135,30 +98,6 @@ $WINGET_PACKAGES = @(
 # Web browsers
     'Google.Chrome'
     'Mozilla.Firefox'
-
-# Office work & document readers & books
-    'Adobe.Acrobat.Reader.64-bit'
-    'TrackerSoftware.PDF-XChangeEditor'
-    'SumatraPDF.SumatraPDF'
-    'KDE.Okular'
-    'TheDocumentFoundation.LibreOffice'
-    'Amazon.Kindle'
-    'Grammarly.Grammarly'
-    'calibre.calibre'
-
-# Messaging and videoconferencing apps
-    'Zoom.Zoom'  # broken TODO FIX?
-    '9NKSQGP7F2NH' # WhatsApp, the winget package is broken
-    'OpenWhisperSystems.Signal'
-    'Facebook.Messenger' # broken? TODO FIX? TODO maybe replace with Chrome PWA
-    'Discord.Discord'
-
-# Multimedia
-    '9NCBCSZSJRSB' # Spotify, the winget package is broken
-    'GIMP.GIMP'
-    'IrfanSkiljan.IrfanView'
-    'Audacity.Audacity'
-    'VideoLAN.VLC'
 
 # Productivity
     'Doist.Todoist'
