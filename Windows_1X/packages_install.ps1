@@ -41,8 +41,6 @@ scoop install windows-virtualdesktop-helper
 # TODO add linux versions of the useful apps to linux initPC script
 
 $WINGET_PACKAGES = @(
-# HW monitoring
-    'CPUID.CPU-Z'
 
 # Runtimes
     'Microsoft.PowerShell'
@@ -57,7 +55,6 @@ $WINGET_PACKAGES = @(
     'AlDanial.Cloc' # count number of lines of code
     'starship.starship'
     'Hex-Rays.IDA.Free'
-    'Oracle.VirtualBox'
 
 # Desktop environment & window management extensions
     'AltSnap.AltSnap' # https://github.com/RamonUnch/AltSnap/wiki (TODO read)
@@ -99,8 +96,6 @@ $WINGET_PACKAGES = @(
     'Google.Chrome'
     'Mozilla.Firefox'
 
-# Productivity
-    'Doist.Todoist'
 )
 
 $WINGET_PACKAGES | ForEach-Object {
@@ -128,19 +123,6 @@ $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";"
 # C++ linters
 pipx install flawfinder
 pipx install cpplint
-
-# TODO try installing these packages directly via winget
-pip install matplotlib
-pip install mock
-pip install numpy
-pip install pandas
-pip install pytest
-pip install requests
-pip install scipy # TODO broken
-pip install statsmodels # TODO broken
-pip install seaborn # TODO broken
-pip install scikit-learn
-pip install shap
 
 # TODO an attempt to reload the path (investigate further)
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" `
